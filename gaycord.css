@@ -39,19 +39,19 @@
 	--channels-default: #a46aa4;
 	--interactive-muted: #714371;
 
-	--1red: #fb5757;
-	--1yellow: #d4b918;
-	--1green: #29ba33;
-	--1cyan: #36adad;
-	--1blue: #5d74e5;
-	--1pink: #e555e0;
-
 	--red: #f99;
 	--yellow: #ebdd8e;
 	--green: #7dee84;
 	--cyan: #52d2d2;
 	--blue: #aab8ff;
 	--pink: #f5a5e1;
+
+	--1red: #ee8b8b;
+	--1yellow: #d6c982;
+	--1green: #81e688;
+	--1cyan: #5ccece;
+	--1blue: #a4b1f2;
+	--1pink: #eda5db;
 
 	--accent: var(--blue);
 /*	--channeltextarea-background: transparent !important;*/
