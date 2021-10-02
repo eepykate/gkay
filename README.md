@@ -19,8 +19,8 @@ Note: these themes go best with the Comic Sans MS font.
 ### Web client:
 1. Install Stylus - [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) / [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us)
 2. Open the "Manage" page of that extension (left click -> manage)
-3. "Write new style"
-4. Paste the contents of [gaycord.css](./gaycord.css)
+3. Click "Write new style" on the left sidebar
+4. Paste the contents of [`gaycord.css`](./gaycord.css)
 5. At the bottom of the page, click the `+` next to "Applies to Everything"
 6. Change the "Applies to" dropdown to "URLs matching the regexp"
 7. In the textbox to the right, paste `https://discord.com/(?!developers).*` (This is so it doesn't break pages like API docs & Bot management)
