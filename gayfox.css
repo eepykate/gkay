@@ -1,0 +1,55 @@
+/*
+ *  gayfox - gay firefox theme
+ *
+ *  Source: https://github.com/6gk/gkay
+ *  By gk <messagke@gmail.com> [github.com/6gk]
+ *  Licensed under MIT (expat)
+ */
+
+:root {
+  --red: #ffb0b0;
+	--yellow: #fff7c6;
+	--green: #cfffd2;
+	--cyan: #c0ffff;
+	--blue: #cbd4ff;
+	--pink: #ffbfef;
+
+	/* --1red: #f04141;
+	 * --1yellow: #b29d21;
+	 * --1green: #30ba39;
+	 * --1cyan: #42b4b4;
+	 * --1blue: #4665ff;
+	 * --1pink: #ff31cb;
+	 */
+
+	--accent: var(--blue);
+}
+
+@keyframes rainbow {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 100% 0;
+	}
+}
+
+#titlebar {
+	background: linear-gradient(
+		to right,
+		var(--red),
+		var(--yellow),
+		var(--green),
+		var(--cyan),
+		var(--blue),
+		var(--pink),
+		var(--red),
+		var(--yellow),
+		var(--green)
+	);
+	background-size: 400% 100% !important;
+}
+
+#titlebar:not(:-moz-window-inactive) {
+	animation: rainbow 3s linear infinite !important;
+}
