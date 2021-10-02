@@ -46,7 +46,9 @@
 	animation: rainbow 3s linear infinite !important;
 }
 
-/* readability is nice. -- Fix inactive tab colour on dark theme */
-html[lwthemetextcolor="bright"] .tabbrowser-tab:not([selected]) .tab-content {
-	color: #333 !important;
+/* readability is nice. -- Fix colours on dark theme */
+#tabs-newtab-button,
+.tabbrowser-tab:not([selected]) .tab-content {
+	--toolbarbutton-icon-fill: #333;
+	color: #333;
 }
