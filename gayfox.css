@@ -7,14 +7,12 @@
  */
 
 :root {
-  --red: #ffb0b0;
+	--red: #ffb0b0;
 	--yellow: #fff7c6;
 	--green: #cfffd2;
 	--cyan: #c0ffff;
 	--blue: #cbd4ff;
 	--pink: #ffbfef;
-
-	--accent: var(--blue);
 }
 
 @keyframes rainbow {

@@ -29,7 +29,6 @@
 	--1pink: #f5a5e1;
 
 	--accent: var(--blue);
-/*	--channeltextarea-background: transparent !important;*/
 }
 .theme-dark {
 	--text-normal: #ff79ff !important;
@@ -54,53 +53,19 @@
 	--1pink: #eda5db;
 
 	--accent: var(--blue);
-/*	--channeltextarea-background: transparent !important;*/
 }
 
-s {
-	position: relative;
-}
-
-s:before {
-	border-bottom: 1px solid #229e9e;
-	position: absolute;
-	content: "";
-	width: 100%;
-	height: 55%;
-}
-
-[class*="repliedTextContent-"] {
-	color: #cacacab8 !important;
-}
+/* fix strikethrough */
+s { text-decoration: #229e9e line-through !important; }
+/* make replied messages slightly dimmed */
+[class*="repliedTextContent-"] { color: #cacacab8 !important; }
 
 @keyframes rainbow {
-	0%{
-		background-position: 0 0;
-	}
-	100% {
-		background-position: 100% 0;
-	}
-}
-.searchBar-3dMhjb,
-#app-mount [id*="chat"] a:not([class*="imageWrapper"]):not([class*="metadataDownload"]) {
-	background: linear-gradient(
-		to right,
-		var(--1red),
-		var(--1yellow),
-		var(--1green),
-		var(--1cyan),
-		var(--1blue),
-		var(--1pink),
-		var(--1red),
-		var(--1yellow),
-		var(--1green),
-		var(--1cyan)
-	);
-	color: #fff;
-	background-size: 300% 100%;
+	0%   { background-position: 0    0; }
+	100% { background-position: 100% 0; }
 }
 
-/*[class*="textArea"] [data-slate-string="true"],*/
+/*[class*="textArea"] [data-slate-string="true"],*/ /* message input box (didnt work well) */
 [class*="typing-"],
 [class*="embed-"] [class*="embedTitle"],
 [class*="title-"],
@@ -125,6 +90,29 @@ blockquote {
 	background-size: 300% 100%;
 }
 
+.searchBar-3dMhjb,
+#app-mount [id*="chat"] a:not([class*="imageWrapper"]):not([class*="metadataDownload"]) {
+	background: linear-gradient(
+		to right,
+		var(--1red),
+		var(--1yellow),
+		var(--1green),
+		var(--1cyan),
+		var(--1blue),
+		var(--1pink),
+		var(--1red),
+		var(--1yellow),
+		var(--1green),
+		var(--1cyan)
+	);
+	color: #fff;
+	background-size: 300% 100%;
+}
+.searchBar-3dMhjb * [data-block="true"],
+.searchBar-3dMhjb {
+	color: white !important;
+}
+
 .app-focused .searchBar-3dMhjb,
 .app-focused #app-mount [id*="chat"] a:not([class*="imageWrapper"]):not([class*="metadataDownload"]),
 .app-focused [class*="typing-"],
@@ -134,21 +122,16 @@ blockquote {
 .app-focused blockquote {
 	animation: rainbow 3s linear infinite;
 }
-code.hljs, code, .hljs * {
-	color: var(--text-normal) !important;
-}
+
+/* don't make code blocks gay (the straights can have that i guess -- for now.) */
+code.hljs, code, .hljs * { color: var(--text-normal) !important; }
 
 [class*="roleColor-rz2vM0"]:not([style]),
 [class*="username"]:not([style]) {
 	color: var(--text-normal);
 }
-[class*="icon-"],
-.membersGroup-v9BXpm,
-[class*="title-"] [class*="icon-"] {
-	color: var(--text-normal) !important;
-}
 
-.searchBar-3dMhjb * [data-block="true"],
-.searchBar-3dMhjb {
-	color: white !important;
+/*.membersGroup-v9BXpm,*/ /* sidebar categories */
+[class*="icon-"] /* most icons (sidebar, top bar) */ {
+	color: var(--text-normal) !important;
 }
