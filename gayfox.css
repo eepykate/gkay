@@ -18,12 +18,8 @@
 }
 
 @keyframes rainbow {
-	0% {
-		background-position: 0 0;
-	}
-	100% {
-		background-position: 100% 0;
-	}
+	0%   { background-position: 0    0; }
+	100% { background-position: 100% 0; }
 }
 
 #titlebar {
@@ -37,9 +33,10 @@
 		var(--pink),
 		var(--red),
 		var(--yellow),
-		var(--green)
+		var(--green),
+		var(--cyan)
 	);
-	background-size: 400% 100% !important;
+	background-size: 300% 100% !important;
 }
 
 #titlebar:not(:-moz-window-inactive) {
