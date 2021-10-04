@@ -35,10 +35,12 @@
 		var(--cyan)
 	);
 	background-size: 300% 100% !important;
+	animation: rainbow 3s linear infinite !important;
+	animation-play-state: running !important;
 }
 
-#titlebar:not(:-moz-window-inactive) {
-	animation: rainbow 3s linear infinite !important;
+#titlebar:-moz-window-inactive {
+	animation-play-state: paused !important;
 }
 
 /* readability is nice. -- Fix colours on dark theme */
