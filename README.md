@@ -1,4 +1,4 @@
-<div align="center"> <img src="./gay.svg"/> </div>
+<div align="center"> <img src="./media/gay.svg"/> </div>
 
 # Themes
 
@@ -8,11 +8,11 @@ Note: these themes go best with the Comic Sans MS font.
 [Firefox (gayfox)](./gayfox.css)  
 [Google (gaygle)](./gaygle.css)  
 
-![gayfox/gaycord demo (light)](./gaycord_and_gayfox-light.gif)
+![gayfox/gaycord demo (light)](./media/gaycord_and_gayfox-light.gif)
 
-![gayfox/gaycord demo (dark)](./gaycord_and_gayfox-dark.gif)
+![gayfox/gaycord demo (dark)](./media/gaycord_and_gayfox-dark.gif)
 
-![gaygle demo](./gaygle.gif)
+![gaygle demo](./media/gaygle.gif)
 
 
 
