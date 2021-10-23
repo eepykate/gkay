@@ -1,5 +1,5 @@
 /*
- *  gaygle - gay google theme (v1.0)  [name ideas welcome]
+ *  gaygle - gay google theme (rev. 2)  [name ideas welcome]
  *
  *  Source: https://github.com/6gk/gkay
  *  By gk <messagke@gmail.com> [github.com/6gk]
@@ -12,6 +12,7 @@
 	100% { background-position: 100% 0; }
 }
 
+.z8gr9e > b /* definition bold word thing */,
 [data-dobid="dfn"] /* definition description (not example) */,
 .c8d6zd /* definition word */,
 .LC20lb /* title of search result */ {
@@ -21,6 +22,7 @@
 	--cyan: #42b4b4;
 	--blue: #778eff;
 	--pink: #ff6efa;
+	font-weight: 500 !important;
 
 	background: linear-gradient(
 		to right,
@@ -43,6 +45,7 @@
 }
 
 /* firefox: save resources when unfocused */
+.z8gr9e > b:-moz-window-inactive,
 [data-dobid="dfn"]:-moz-window-inactive,
 .c8d6zd:-moz-window-inactive,
 .LC20lb:-moz-window-inactive {
