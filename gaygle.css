@@ -1,5 +1,5 @@
 /*
- *  gaygle - gay google theme (rev. 3)  [name ideas welcome]
+ *  gaygle - gay google theme (rev. 4)  [name ideas welcome]
  *
  *  Source: https://github.com/6gk/gkay
  *  By gk <messagke@gmail.com> [github.com/6gk]
@@ -13,10 +13,12 @@
 	100% { background-position: 100% 0; }
 }
 
-.z8gr9e > b /* definition bold word thing */,
-[data-dobid="dfn"] /* definition description (not example) */,
-.c8d6zd /* definition word */,
-#search a /* title of search result */ {
+[data-dobid="dfn"], /* definition description */
+.z8gr9e > b,        /* definition bold word thing */
+.c8d6zd,            /* definition title */
+.LC20lb,            /* title of search result */
+.IsZvec a           /* secondary links in result description */
+{
 	--red: #ff6d6d;
 	--yellow: #b29d21;
 	--green: #30ba39;
@@ -46,9 +48,10 @@
 }
 
 /* firefox: save resources when unfocused */
-.z8gr9e > b:-moz-window-inactive,
 [data-dobid="dfn"]:-moz-window-inactive,
+.z8gr9e > b:-moz-window-inactive,
 .c8d6zd:-moz-window-inactive,
-#search a:-moz-window-inactive {
+.LC20lb:-moz-window-inactive,
+.IsZvec a:-moz-window-inactive {
 	animation-play-state: paused !important;
 }
