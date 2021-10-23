@@ -1,11 +1,12 @@
 /*
- *  gaygle - gay google theme (rev. 2)  [name ideas welcome]
+ *  gaygle - gay google theme (rev. 3)  [name ideas welcome]
  *
  *  Source: https://github.com/6gk/gkay
  *  By gk <messagke@gmail.com> [github.com/6gk]
  *  Licensed under MIT (expat)
  */
 
+/* TODO: Fix visited links. */
 
 @keyframes rainbow {
 	0%   { background-position: 0    0; }
@@ -15,7 +16,7 @@
 .z8gr9e > b /* definition bold word thing */,
 [data-dobid="dfn"] /* definition description (not example) */,
 .c8d6zd /* definition word */,
-.LC20lb /* title of search result */ {
+#search a /* title of search result */ {
 	--red: #ff6d6d;
 	--yellow: #b29d21;
 	--green: #30ba39;
@@ -48,6 +49,6 @@
 .z8gr9e > b:-moz-window-inactive,
 [data-dobid="dfn"]:-moz-window-inactive,
 .c8d6zd:-moz-window-inactive,
-.LC20lb:-moz-window-inactive {
+#search a:-moz-window-inactive {
 	animation-play-state: paused !important;
 }
