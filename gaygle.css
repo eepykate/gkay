@@ -1,0 +1,50 @@
+/*
+ *  gaygle - gay google theme (v1.0)  [name ideas welcome]
+ *
+ *  Source: https://github.com/6gk/gkay
+ *  By gk <messagke@gmail.com> [github.com/6gk]
+ *  Licensed under MIT (expat)
+ */
+
+
+@keyframes rainbow {
+	0%   { background-position: 0    0; }
+	100% { background-position: 100% 0; }
+}
+
+[data-dobid="dfn"] /* definition description (not example) */,
+.c8d6zd /* definition word */,
+.LC20lb /* title of search result */ {
+	--red: #ff6d6d;
+	--yellow: #b29d21;
+	--green: #30ba39;
+	--cyan: #42b4b4;
+	--blue: #778eff;
+	--pink: #ff6efa;
+
+	background: linear-gradient(
+		to right,
+		var(--red),
+		var(--yellow),
+		var(--green),
+		var(--cyan),
+		var(--blue),
+		var(--pink),
+		var(--red),
+		var(--yellow),
+		var(--green),
+		var(--cyan)
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	background-size: 300% 100%;
+	animation: rainbow 3s linear infinite;
+}
+
+/* firefox: save resources when unfocused */
+[data-dobid="dfn"]:-moz-window-inactive,
+.c8d6zd:-moz-window-inactive,
+.LC20lb:-moz-window-inactive {
+	animation-play-state: paused !important;
+}

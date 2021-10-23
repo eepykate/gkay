@@ -5,32 +5,34 @@
 Note: these themes go best with the Comic Sans MS font.
 
 [Discord (gaycord)](./gaycord.css)  
-[Firefox (gayfox)](./gayfox.css)
+[Firefox (gayfox)](./gayfox.css)  
+[Google (gaygle)](./gaygle.css)  
 
-![demo (light)](./gaycord_and_gayfox-light.gif)
+![gayfox/gaycord demo (light)](./gaycord_and_gayfox-light.gif)
 
-![demo (dark)](./gaycord_and_gayfox-dark.gif)
+![gayfox/gaycord demo (dark)](./gaycord_and_gayfox-dark.gif)
+
+![gaygle demo](./gaygle.gif)
 
 
 
 # HALP!? How install?!?
 
-## [gaycord:](./gaycord.css)
-### Web client:
-1. Install Stylus - [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) / [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us)
-2. Open the "Manage" page of that extension (left click -> manage)
-3. Click "Write new style" on the left sidebar
-4. Paste the contents of [`gaycord.css`](./gaycord.css)
-5. At the bottom of the page, click the `+` next to "Applies to Everything"
-6. Change the "Applies to" dropdown to "URLs matching the regexp"
-7. In the textbox to the right, paste `https://discord.com/(?!developers).*` (This is so it doesn't break pages like API docs & Bot management)
-8. Give it a name such as "gaycord"
-9. Save, and enjoy.  This is an order.
+## Websites
+ - [gaycord](./gaycord.css) (web client)
+ - [gaygle](./gaygle.css)
 
-### Electron client (Desktop App)
+1. Install Stylus - [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) / [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us)
+2. Go to the site that the style is made for
+3. Click the stylus icon to open a popup
+4. Near the bottom, click the domain name (as in, `site.com`, not the things after)
+5. Paste the contents of the file you want
+6. Save, and enjoy.  This is an order.
+
+
+## Gaycord (bad version) (electron / desktop app)
 [DiscoCSS (Linux-only)](https://github.com/mlvzk/discocss)  
 powercord / betterdiscord / something else, PR if you wanna fix this section.
-
 
 
 ## [gayfox:](./gayfox.css)
