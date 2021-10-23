@@ -19,8 +19,8 @@ Note: these themes go best with the Comic Sans MS font.
 # HALP!? How install?!?
 
 ## Websites
- - [gaycord](./gaycord.css) (web client)
- - [gaygle](./gaygle.css)
+ - gaycord (web client)
+ - gaygle
 
 1. Install Stylus - [Chrome](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en) / [Firefox](https://addons.mozilla.org/en-US/firefox/addon/styl-us)
 2. Go to the site that the style is made for
@@ -35,9 +35,9 @@ Note: these themes go best with the Comic Sans MS font.
 powercord / betterdiscord / something else, PR if you wanna fix this section.
 
 
-## [gayfox:](./gayfox.css)
+## gayfox
 1. Enable `toolkit.legacyUserProfileCustomizations.stylesheets` in `about:config`
 2. Go to your profile directory by going to `about:support` and looking for "Profile Directory"
 3. Once you're in that dir, make a subdir called `chrome`
-4. In the `chrome` subdir, put the contents of [`gayfox.css`](./gayfox.css) into a file called `userChrome.css` (With those capitals)
+4. In the `chrome` subdir, put the contents of `gayfox.css` into a file called `userChrome.css` (With those capitals)
 5. Restart firefox
