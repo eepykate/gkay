@@ -1,5 +1,5 @@
 /*
- *  gaycord - gay discord theme (rev. 2)
+ *  gaycord - gay discord theme (rev. 3)
  *
  *  Source: https://github.com/6gk/gkay
  *  By gk <messagke@gmail.com> [github.com/6gk]
@@ -7,13 +7,6 @@
  */
 
 .theme-light {
-	--text-normal: #ff45ff !important;
-	--interactive-normal: magenta;
-	--interactive-hover: magenta;
-	--interactive-active: magenta;
-	--interactive-muted: #ffcbff;
-	--channels-default: #ae77aecf;
-
 	--red: #ff6d6d;
 	--yellow: #b29d21;
 	--green: #30ba39;
@@ -31,13 +24,6 @@
 	--accent: var(--blue);
 }
 .theme-dark {
-	--text-normal: #ff79ff !important;
-	--interactive-normal: #ff79ff;
-	--interactive-hover: #ff79ff;
-	--interactive-active: #ff79ff;
-	--channels-default: #a46aa4;
-	--interactive-muted: #714371;
-
 	--red: #f99;
 	--yellow: #ebdd8e;
 	--green: #7dee84;
@@ -58,7 +44,8 @@
 /* fix strikethrough */
 s { text-decoration: #229e9e line-through !important; }
 /* make replied messages slightly dimmed */
-[class*="repliedTextContent-"] { color: #cacacab8 !important; }
+.theme-light [class*="repliedTextContent-"] { color: #cacacab8 !important; }
+.theme-dark [class*="repliedTextContent-"] { color: #8a8a8ab8 !important; }
 
 @keyframes rainbow {
 	0%   { background-position: 0    0; }
@@ -87,6 +74,7 @@ blockquote {
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
+	fill: transparent;
 	background-size: 300% 100%;
 }
 
@@ -125,9 +113,4 @@ code.hljs, code, .hljs * { color: var(--text-normal) !important; }
 [class*="roleColor-rz2vM0"]:not([style]),
 [class*="username"]:not([style]) {
 	color: var(--text-normal);
-}
-
-/*.membersGroup-v9BXpm,*/ /* sidebar categories */
-[class*="icon-"] /* most icons (sidebar, top bar) */ {
-	color: var(--text-normal) !important;
 }
