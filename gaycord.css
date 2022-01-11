@@ -1,5 +1,5 @@
 /*
- *  gaycord - gay discord theme (rev. 3)
+ *  gaycord - gay discord theme (rev. 4)
  *
  *  Source: https://github.com/6gk/gkay
  *  By gk <messagke@gmail.com> [github.com/6gk]
@@ -56,7 +56,7 @@ s { text-decoration: #229e9e line-through !important; }
 [class*="typing-"],
 [class*="embed-"] [class*="embedTitle"],
 [class*="title-"],
-.messageContent-2qWWxC,
+.messageContent-2t3eCI,
 blockquote {
 	background: linear-gradient(
 		to right,
@@ -102,7 +102,7 @@ blockquote {
 .app-focused [class*="typing-"],
 .app-focused [class*="embed-"] [class*="embedTitle"],
 .app-focused [class*="title-"],
-.app-focused .messageContent-2qWWxC,
+.app-focused .messageContent-2t3eCI,
 .app-focused blockquote {
 	animation: rainbow 3s linear infinite;
 }
