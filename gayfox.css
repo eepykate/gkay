@@ -1,5 +1,5 @@
 /*
- *  gayfox - gay firefox theme (rev. 3)
+ *  gayfox - gay firefox theme (rev. 4)
  *
  *  Source: https://github.com/6gk/gkay
  *  By gk <messagke@gmail.com> [github.com/6gk]
@@ -48,4 +48,13 @@
 .tabbrowser-tab:not([selected]) .tab-content {
 	--toolbarbutton-icon-fill: #333;
 	color: #333;
+}
+
+
+/** windows:tm: **/
+/* doesn't show the rainbow with the default appearance */
+#titlebar { appearance: none !important; }
+/* due to resetting appearance, the top is cut off if this is left default */
+#main-window[sizemode="maximized"] #titlebar {
+	padding-top: 8px;
 }
