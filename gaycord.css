@@ -1,5 +1,5 @@
 /*
- *  gaycord - gay discord theme (rev. 4)
+ *  gaycord - gay discord theme (rev. 5)
  *
  *  Source: https://github.com/6gk/gkay
  *  By gk <messagke@gmail.com> [github.com/6gk]
@@ -79,7 +79,7 @@ blockquote {
 }
 
 .searchBar-3dMhjb,
-#app-mount [id*="chat"] a:not([class*="imageWrapper"]):not([class*="metadataDownload"]) {
+#app-mount [id*="chat"] a:not([class*="originalLink"]):not([class*="metadataDownload"]) {
 	background: linear-gradient(
 		to right,
 		var(--1red),
