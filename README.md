@@ -2,7 +2,8 @@
 
 # Themes
 
-Note: these themes go best with the Comic Sans MS font.
+Note: these themes go best with the Comic Sans MS font.  
+Note: magenta has been removed from gaycord, but I'm too lazy to redo the gifs.
 
 [Discord (gaycord)](./gaycord.css)  
 [Firefox (gayfox)](./gayfox.css)  
