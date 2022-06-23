@@ -11,8 +11,6 @@ Note: magenta has been removed from gaycord, but I'm too lazy to redo the gifs.
 
 ![gayfox/gaycord demo (light)](./media/gaycord_and_gayfox-light.gif)
 
-![gayfox/gaycord demo (dark)](./media/gaycord_and_gayfox-dark.gif)
-
 ![gaygle demo](./media/gaygle.gif)
 
 
