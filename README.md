@@ -33,6 +33,8 @@ Note: magenta has been removed from gaycord, but I'm too lazy to redo the gifs.
 [DiscoCSS (Linux-only)](https://github.com/mlvzk/discocss)  
 powercord / betterdiscord / something else, PR if you wanna fix this section.
 
+Remember to remove the first/last lines in this case.
+
 
 ## gayfox
 1. Enable `toolkit.legacyUserProfileCustomizations.stylesheets` in `about:config`
