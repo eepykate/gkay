@@ -1,3 +1,6 @@
+@-moz-document domain("www.google.com") {
+
+
 /*
  *  gaygle - gay google theme (rev. 5)  [name ideas welcome]
  *
@@ -62,4 +65,7 @@ a:visited .LC20lb {
 .IsZvec a:-moz-window-inactive,
 .fl:-moz-window-inactive {
 	animation-play-state: paused !important;
+}
+
+
 }
