@@ -1,3 +1,6 @@
+@-moz-document regexp("https://discord\\.com/channels/.*"), regexp("https://discord\\.com/(?!channels).*") {
+
+
 /*
  *  gaycord - gay discord theme (rev. 5)
  *
@@ -5,6 +8,9 @@
  *  By gk <messagke@gmail.com> [github.com/6gk]
  *  Licensed under MIT (expat)
  */
+/*
+  https://discord\.com/channels/(?!238090316320604161).*
+*/
 
 .theme-light {
 	--red: #ff6d6d;
@@ -76,6 +82,12 @@ blockquote {
 	color: transparent;
 	fill: transparent;
 	background-size: 300% 100%;
+
+/*    animation: rainbow 3s linear infinite;*/
+}
+
+div[class*="systemMessage-"] a > span {
+    color: white !important;
 }
 
 .searchBar-3dMhjb,
@@ -95,6 +107,8 @@ blockquote {
 	);
 	color: #fff;
 	background-size: 300% 100%;
+
+/*	animation: rainbow 3s linear infinite;*/
 }
 
 .app-focused .searchBar-3dMhjb,
@@ -105,6 +119,8 @@ blockquote {
 .app-focused .messageContent-2t3eCI,
 .app-focused blockquote {
 	animation: rainbow 3s linear infinite;
+
+/*    animation-play-state: paused;*/
 }
 
 /* don't make code blocks gay (the straights can have that i guess -- for now.) */
@@ -113,4 +129,7 @@ code.hljs, code, .hljs * { color: var(--text-normal) !important; }
 [class*="roleColor-rz2vM0"]:not([style]),
 [class*="username"]:not([style]) {
 	color: var(--text-normal);
+}
+
+
 }
