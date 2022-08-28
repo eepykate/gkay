@@ -1,0 +1,25 @@
+@-moz-document regexp("https?://(?!(docs.google.com)).*") {
+
+
+div:not([class*="hljs"]):not([class*="img"]):not(.simple_tooltip-click-area):not([class*="icon-"]),
+span:not([class*="fa-"]):not(.t-icon):not([class*="material-icons"]):not([class*="hljs-"]):not([class*="icon-"]),
+button:not([class*=" i-"]),
+
+h1,h2,h3,h4,h5,
+ol,li,
+yt-formatted-string,
+input,
+tr,
+td,
+p,
+select,option,
+b,
+strong,
+a,
+textarea {
+	font-family: Comic Sans MS !important;
+	font-feature-settings: normal !important;
+}
+
+
+}
