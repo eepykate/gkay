@@ -1,8 +1,7 @@
 @-moz-document regexp("https://discord\\.com/channels/.*"), regexp("https://discord\\.com/(?!channels).*") {
 
-
 /*
- *  gaycord - gay discord theme (rev. 5)
+ *  gaycord - gay discord theme (rev. 6)
  *
  *  Source: https://github.com/6gk/gkay
  *  By gk <messagke@gmail.com> [github.com/6gk]
@@ -59,11 +58,24 @@ s { text-decoration: #229e9e line-through !important; }
 }
 
 /*[class*="textArea"] [data-slate-string="true"],*/ /* message input box (didnt work well) */
+[class*="messageContent-"] ol,
+[class*="messageContent-"] li,
+[class*="messageContent-"] [class*="spoiler"][aria-expanded="true"] span,
+[class*="messageContent-"] h1,
+[class*="messageContent-"] h2,
+[class*="messageContent-"] h3,
+[class*="messageContent-"] h4,
+[class*="messageContent-"] h5,
+[class*="messageContent-"] h6,
+[class*="messageContent-"] h7,
+[class*="messageContent-"] h8,
 [class*="typing-"],
 [class*="embed-"] [class*="embedTitle"],
 [class*="title-"],
-.messageContent-2t3eCI,
+.messageContent__21e69 li,
+.messageContent__21e69,
 blockquote {
+    list-style-position: inside;
 	background: linear-gradient(
 		to right,
 		var(--red),
@@ -85,6 +97,7 @@ blockquote {
 
 /*    animation: rainbow 3s linear infinite;*/
 }
+
 
 div[class*="systemMessage-"] a > span {
     color: white !important;
@@ -116,7 +129,7 @@ div[class*="systemMessage-"] a > span {
 .app-focused [class*="typing-"],
 .app-focused [class*="embed-"] [class*="embedTitle"],
 .app-focused [class*="title-"],
-.app-focused .messageContent-2t3eCI,
+.app-focused .messageContent__21e69,
 .app-focused blockquote {
 	animation: rainbow 3s linear infinite;
 
@@ -130,6 +143,5 @@ code.hljs, code, .hljs * { color: var(--text-normal) !important; }
 [class*="username"]:not([style]) {
 	color: var(--text-normal);
 }
-
 
 }
