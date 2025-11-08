@@ -1,9 +1,10 @@
 @-moz-document regexp("https?://(?!(docs.google.com)).*") {
 
 
-div:not([class*="hljs"]):not([class*="img"]):not(.simple_tooltip-click-area):not([class*="icon-"]),
-span:not([class*="fa-"]):not(.t-icon):not([class*="material-icons"]):not([class*="hljs-"]):not([class*="icon-"]),
-button:not([class*=" i-"]),
+div:not([class*="hljs"]):not([class*="img"]):not(.simple_tooltip-click-area):not([class*="icon-"]):not([class*="ms-Icon"]):not(.react-code-text),
+span:not([class*="star-"]):not([data-icon-name]):not([class*="fa-"]):not(.t-icon):not([class*="material-icons"]):not([class*="hljs-"]):not([class*="icon-"]):not(.iconfont):not([class*="jdgm"]):not([class*="material-symbols-"]):not(.google-symbols):not([class*="pl-"]),
+button:not([class*=" i-"]):not(.icon):not([class*="fa-"]),
+a:not([class*="jdgm"]):not(.btn-icon):not(.icon),
 
 h1,h2,h3,h4,h5,
 ol,li,
@@ -14,12 +15,13 @@ td,
 p,
 select,option,
 b,
-strong,
-a,
-textarea {
-	font-family: Comic Sans MS !important;
-	font-feature-settings: normal !important;
+strong {
+    font-family: Comic Sans MS !important;
+    font-feature-settings: normal !important;
 }
+
+div.react-code-text span,
+textarea {font-family: Comic Mono !important;}
 
 
 }
