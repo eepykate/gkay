@@ -1,5 +1,5 @@
 /*
- *  gaycord - gay discord theme (rev. 8)
+ *  gaycord - gay discord theme (rev. 9)
  *
  *  Source: https://github.com/6gk/gkay
  *  By gk <messagke@gmail.com> [github.com/6gk]
@@ -54,6 +54,7 @@ s { text-decoration: #229e9e line-through !important; }
 	0%   { background-position: 0    0; }
 	100% { background-position: 100% 0; }
 }
+.vc-addon-title { position: unset !important; }
 
 /*[class*="textArea"] [data-slate-string="true"],*/ /* message input box (didnt work well) */
 [class*="messageContent_"],
