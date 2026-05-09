@@ -1,5 +1,79 @@
+:root{ --lwt-toolbar-field-highlight: #bb4454 !important;
+--lwt-toolbar-field-highlight-text: white !important; }
+
+/* popup window in discord :p */
+/*#TabsToolbar[collapsed] + #nav-bar { display: none !important; }
+
+/*#appMenu-update-available-notification {
+  display: none !important;
+}*/
 /*
- *  gayfox - gay firefox theme (rev. 4)
+#sidebar-main {
+	max-width: 40px !important;
+}
+*/
+.tools-and-extensions.actions-list[orientation="vertical"] > * {
+	margin-left: -6px;
+  padding: 2px 0px 3px 0px;
+	scale: 1 !important;
+}
+
+*:not(.titlebar-button) { font-family: "Comic Sans MS" !important; }
+
+/*tab-group:not([collapsed]) > .tabbrowser-tab[fadein="true"] {
+	max-width: 280px !important;
+}*/
+#navigator-toolbox {
+	border-bottom: transparent !important;
+}
+
+
+
+
+
+
+/*
+#sidebar-main  {
+	background: linear-gradient(
+		to bottom,
+		var(--red),
+		var(--yellow),
+		var(--green),
+		var(--cyan),
+		var(--blue),
+		var(--pink),
+		var(--red),
+		var(--yellow),
+		var(--green),
+		var(--cyan)
+	);
+	background-size: 100% 300% !important;
+	animation: rainbowv 3s linear infinite !important;
+	animation-play-state: running !important;
+	--button-text-color-ghost: #333 !important;
+  --button-text-color: #111 !important;
+}
+
+button-group[orientation="vertical"] moz-button {
+		--button-icon-fill: #555 !important;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+ *  gayfox - gay firefox theme (rev. 6)
  *
  *  Source: https://github.com/6gk/gkay
  *  By gk <messagke@gmail.com> [github.com/6gk]
@@ -13,14 +87,21 @@
 	--cyan: #c0ffff;
 	--blue: #cbd4ff;
 	--pink: #ffbfef;
+	--tabstrip-inner-border: 1px solid hsla(0, 0%, 1%, 10%) !important;
+	/*--toolbarbutton-icon-fill: #fff !important;*/
 }
 
 @keyframes rainbow {
 	0%   { background-position: 0    0; }
 	100% { background-position: 100% 0; }
 }
+@keyframes rainbowv {
+	0%   { background-position: 0    0; }
+	100% { background-position: 0    100%; }
+}
 
-#titlebar {
+
+#TabsToolbar {
 	background: linear-gradient(
 		to right,
 		var(--red),
@@ -39,22 +120,46 @@
 	animation-play-state: running !important;
 }
 
-#titlebar:-moz-window-inactive {
+#TabsToolbar[collapsed="true"] + #nav-bar {
+	background: linear-gradient(
+		to right,
+		var(--red),
+		var(--yellow),
+		var(--green),
+		var(--cyan),
+		var(--blue),
+		var(--pink),
+		var(--red),
+		var(--yellow),
+		var(--green),
+		var(--cyan)
+	);
+	background-size: 300% 100% !important;
+	animation: rainbow 3s linear infinite !important;
+	animation-play-state: running !important;
+  --toolbarbutton-icon-fill: #555 !important;
+}
+
+#sidebar-main:-moz-window-inactive,
+#TabsToolbar + #nav-bar:-moz-window-inactive,
+#TabsToolbar:-moz-window-inactive {
 	animation-play-state: paused !important;
 }
 
 /* readability is nice. -- Fix colours on dark theme */
-#tabs-newtab-button,
-.tabbrowser-tab:not([selected]) .tab-content {
+#navigator-toolbox .titlebar-button,
+#navigator-toolbox #tabs-newtab-button,
+#navigator-toolbox .tabbrowser-tab:not([selected]) .tab-content {
 	--toolbarbutton-icon-fill: #333;
-	color: #333;
+	color: #555 !important;
 }
 
 
 /** windows:tm: **/
 /* doesn't show the rainbow with the default appearance */
-#titlebar { appearance: none !important; }
-/* due to resetting appearance, the top is cut off if this is left default */
-#main-window[sizemode="maximized"] #titlebar {
+#TabsToolbar { appearance: none !important; }
+/* Appears to be fixed in v100 --- due to resetting appearance, the top is cut off if this is left default */
+/*#main-window[sizemode="maximized"] #titlebar {
 	padding-top: 8px;
-}
+}*/
+
